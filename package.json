@@ -1,0 +1,19 @@
+{
+  "name": "robot-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^1.18.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "robots-parser": "^2.1.1"
+  }
+}

@@ -12,12 +12,12 @@ async function getPageTextContent(url) {
   return robotsTxt;
 }
 
-async function main() {
-  const robotTxtUrl = "http://craigslist.org/robots.txt";
+async function getRobotsParser(robotTxtUrl) {
   const robotsTxt = await getPageTextContent(
     "http://craigslist.org/robots.txt"
   );
   const robotsParser = robots(robotTxtUrl, robotsTxt);
+  return robotsParser;
 }
 
-main();
+module.exports = getRobotsParser;

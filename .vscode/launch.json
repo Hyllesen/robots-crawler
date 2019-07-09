@@ -7,6 +7,12 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch Robots parser",
+      "program": "${workspaceFolder}/robots-local-example.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Crawler",
       "program": "${workspaceFolder}\\crawler.js"
     }

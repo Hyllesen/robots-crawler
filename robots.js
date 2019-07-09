@@ -1,17 +1,9 @@
 var robotsParser = require("robots-parser");
 
-var robots = robotsParser(
-  "https://sfbay.craigslist.org/robots.txt",
-  [
-    "User-agent: *",
-    "Disallow: /reply",
-    "Disallow: /fb/",
-    "Disallow: /suggest",
-    "Disallow: /flag",
-    "Disallow: /mf",
-    "Disallow: /eaf",
-    "Disallow: /*.html?lang="
-  ].join("\n")
-);
-
-module.exports = robots;
+module.exports = function getRobotParser(
+  urlToRobotsTxtFile,
+  robotsTextContent
+) {
+  var robots = robotsParser(urlToRobotsTxtFile, robotsTextContent);
+  return robots;
+};

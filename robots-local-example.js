@@ -16,6 +16,7 @@ function main() {
   console.log(
     parser.isAllowed("https://sfbay.craigslist.org/", "Stefans Bot 0.1")
   );
+  console.log(parser.isAllowed("https://google.com/", "Stefans Bot 0.1"));
   console.log(
     parser.isDisallowed("https://sfbay.craigslist.org/reply", "Stefans Bot 0.1")
   );
